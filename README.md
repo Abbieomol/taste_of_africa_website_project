@@ -93,7 +93,7 @@ taste_of_africa_website_project/
 
 ## Credits
 
-**Fonts:** [Abril Fatface](https://fonts.google.com/specimen/Abril+Fatface) and [Nunito Sans](https://fonts.google.com/specimen/Nunito+Sans) from Google Fonts.
+**Fonts:** [DM Serif Display](https://fonts.google.com/specimen/DM+Serif+Display) and [Mulish](https://fonts.google.com/specimen/Mulish) from Google Fonts.
 
 **Maps:** Google Maps embeds.
 

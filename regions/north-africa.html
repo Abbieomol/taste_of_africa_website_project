@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Food culture, staples and cooking techniques of North Africa.">
+  <title>North Africa | Tastes of Africa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Nunito+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo" aria-label="Tastes of Africa – home">
+        <span class="logo-text">Tastes <em>of</em> Africa</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../recipes.html">Recipes</a></li>
+        <li><a href="../regions.html" aria-current="page">Regions</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Toggle dark / light mode">
+        <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="M20.7 14.6A8.5 8.5 0 0 1 9.4 3.3 8.5 8.5 0 1 0 20.7 14.6z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v3M12 19.5v3M1.5 12h3M19.5 12h3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M4.6 19.4l2.1-2.1M17.3 6.7l2.1-2.1"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-banner region-banner" style="--banner-img: url('../images/north-africa.jpg')" aria-labelledby="page-title">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../regions.html">Regions</a></li>
+            <li aria-current="page">North Africa</li>
+          </ol>
+        </nav>
+        <h1 id="page-title">North Africa</h1>
+        <p class="region-countries">Morocco · Algeria · Tunisia · Libya · Egypt</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container region-layout">
+        <div class="region-text">
+          <p class="lead">North African cuisine sits at the crossroads of Africa, the Mediterranean and the Middle East. Amazigh (Berber), Arab, Andalusian and Ottoman influences have blended into some of the world's most aromatic food.</p>
+
+          <h2>Food culture</h2>
+          <p>Hospitality is everything: guests are welcomed with sweet <strong>mint tea</strong>, and Friday lunch in Morocco traditionally means a large shared platter of <strong>couscous</strong>. Meals are eaten from a communal dish using bread (khobz) as a spoon.</p>
+
+          <h2>Cooking techniques &amp; spices</h2>
+          <p>The <mark>tagine</mark> pot slow-braises meat with very little water, while couscous is <mark>steamed three times</mark> in a couscoussier above a simmering stew. Signature flavours include <mark>ras el hanout</mark> (a blend of up to 30 spices), <mark>saffron</mark>, <mark>cumin</mark>, <mark>harissa</mark> chilli paste and tangy <mark>preserved lemon</mark>.</p>
+        </div>
+
+        <aside class="staples-card" aria-labelledby="staples-title">
+          <h2 id="staples-title">Staple foods</h2>
+          <ul class="staples-list">
+            <li>Semolina couscous and bread (khobz)</li>
+            <li>Chickpeas, lentils and fava beans</li>
+            <li>Olives and olive oil</li>
+            <li>Lamb, chicken and fish</li>
+            <li>Dates, figs, apricots and almonds</li>
+            <li>Preserved lemons</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section-alt" aria-labelledby="video-title">
+      <div class="container narrow">
+        <h2 id="video-title">Taste it on screen</h2>
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/CpVQElpwbdg?si=7cT0rZg4mSiSxxzd" title="Moroccan vegetable tagine" loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="dishes-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Cook the region</p>
+          <h2 id="dishes-title">Example dishes from North Africa</h2>
+        </header>
+        <div class="recipe-grid">
+        <article class="recipe-card reveal" data-region="north-africa" data-id="tagine">
+          <img src="../images/tagine.jpg" alt="Chicken Tagine – Slow-Braised Moroccan Stew" loading="lazy" width="1200" height="800">
+          <div class="card-body">
+            <span class="tag tag-north-africa">North Africa · Morocco</span>
+            <h3><a href="../recipes/tagine.html">Chicken Tagine</a></h3>
+            <p>Chicken slow-braised with preserved lemon, olives and saffron in Morocco's iconic cone-shaped clay pot.</p>
+            <ul class="card-meta" aria-label="Recipe details">
+              <li>1 hr 30 min</li>
+              <li>Serves 4</li>
+              <li>Medium</li>
+            </ul>
+          </div>
+          <div class="card-actions">
+            <a class="btn btn-small" href="../recipes/tagine.html">View recipe <span aria-hidden="true">→</span></a>
+            <button class="fav-btn" type="button" data-id="tagine" aria-pressed="false" aria-label="Add Chicken Tagine to favourites"><svg class="heart" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 2.9 4.5 6.6 4.5c2.2 0 3.6 1.2 4.4 2.5.8-1.3 2.2-2.5 4.4-2.5 3.7 0 5.7 3.9 4.2 7.3C19.5 16.4 12 21 12 21z"/></svg> <span class="fav-label">Favorite</span></button>
+          </div>
+        </article>
+        </div>
+        <p class="more-dishes"><strong>Also worth tasting:</strong> Couscous, Harira soup, Shakshuka, Koshari, Pastilla.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <section class="footer-brand" aria-labelledby="footer-title">
+        <h2 id="footer-title" class="logo-text">Tastes <em>of</em> Africa</h2>
+        <p>Celebrating the dishes, spices and stories of a continent — one recipe at a time.</p>
+      </section>
+
+      <nav class="footer-links" aria-label="Footer">
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="../recipes.html">All recipes</a></li>
+          <li><a href="../regions/east-africa.html">East Africa</a></li>
+          <li><a href="../regions/west-africa.html">West Africa</a></li>
+          <li><a href="../regions/north-africa.html">North Africa</a></li>
+          <li><a href="../contact.html">Get in touch</a></li>
+        </ul>
+      </nav>
+
+      <section class="newsletter" aria-labelledby="newsletter-title">
+        <h3 id="newsletter-title">Join our kitchen table</h3>
+        <p>One new recipe and a spice story every month. No spam.</p>
+        <form class="newsletter-form" id="newsletter-form">
+          <label for="newsletter-email" class="visually-hidden">Email address</label>
+          <input type="email" id="newsletter-email" name="newsletter-email" placeholder="you@example.com" required>
+          <button type="submit" class="btn btn-accent">Subscribe</button>
+        </form>
+        <p class="newsletter-msg" aria-live="polite"></p>
+      </section>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; <span id="year">2026</span> Tastes of Africa · Made with love and a lot of pilipili.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" type="button" aria-label="Back to top">↑</button>
+
+  <script src="../script.js"></script>
+</body>
+</html>

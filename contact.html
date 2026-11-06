@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get in touch with Tastes of Africa.">
+  <title>Contact | Tastes of Africa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Nunito+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Tastes of Africa – home">
+        <span class="logo-text">Tastes <em>of</em> Africa</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="regions.html">Regions</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Toggle dark / light mode">
+        <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="M20.7 14.6A8.5 8.5 0 0 1 9.4 3.3 8.5 8.5 0 1 0 20.7 14.6z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v3M12 19.5v3M1.5 12h3M19.5 12h3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M4.6 19.4l2.1-2.1M17.3 6.7l2.1-2.1"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-banner" aria-labelledby="page-title">
+      <div class="container">
+        <p class="eyebrow">Say jambo</p>
+        <h1 id="page-title">Contact Us</h1>
+        <p class="lead">Share a family recipe, suggest a dish or just say hello. We read every message.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-layout">
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="e.g. Amani Otieno" autocomplete="name" required>
+              <p class="field-error" id="name-error" aria-live="polite"></p>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+              <p class="field-error" id="email-error" aria-live="polite"></p>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="country">Country</label>
+              <input type="text" id="country" name="country" list="country-list" placeholder="Start typing your country…" autocomplete="country-name">
+              <datalist id="country-list">
+              <option value="Kenya"></option>
+              <option value="Uganda"></option>
+              <option value="Tanzania"></option>
+              <option value="Rwanda"></option>
+              <option value="Ethiopia"></option>
+              <option value="Nigeria"></option>
+              <option value="Ghana"></option>
+              <option value="Senegal"></option>
+              <option value="Cameroon"></option>
+              <option value="Morocco"></option>
+              <option value="Egypt"></option>
+              <option value="South Africa"></option>
+              <option value="United Kingdom"></option>
+              <option value="United States"></option>
+              <option value="Other"></option>
+              </datalist>
+            </div>
+
+            <div class="form-group">
+              <label for="topic">Topic</label>
+              <select id="topic" name="topic">
+                <option value="general">General question</option>
+                <option value="recipe">Share a recipe</option>
+                <option value="feedback">Website feedback</option>
+                <option value="partnership">Partnership</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message <span class="muted">(more than 20 characters)</span></label>
+            <textarea id="message" name="message" rows="6" placeholder="Tell us about the dish your family loves…" required></textarea>
+            <div class="message-footer">
+              <p class="field-error" id="message-error" aria-live="polite"></p>
+              <span class="char-count" id="char-count" aria-live="polite">0 / 21 characters minimum</span>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-accent btn-block">Send message</button>
+        </form>
+
+        <!-- message confirmation after submission -->
+        <div class="form-success hidden" id="form-success" role="status" tabindex="-1">
+          <span class="success-icon"><svg viewBox="0 0 24 24" width="32" height="32" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+          <h2 id="success-message">Thank you!</h2>
+          <p>We'll get back to you within two working days. Asante sana!</p>
+          <button type="button" class="btn btn-small" id="send-another">Send another message</button>
+        </div>
+
+        <aside class="contact-info" aria-labelledby="info-title">
+          <h2 id="info-title">Other ways to reach us</h2>
+          <ul class="contact-list">
+            <li><span class="contact-label">Location</span> Nairobi, Kenya</li>
+            <li><span class="contact-label">Email</span> contact@tastesofafrica.com</li>
+            <li><span class="contact-label">Hours</span> Mon – Fri, 9:00 – 17:00 EAT</li>
+          </ul>
+          <p>Got a family recipe? Tell us the dish, where it's from and who taught you how to make it, we'd love to feature it.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <section class="footer-brand" aria-labelledby="footer-title">
+        <h2 id="footer-title" class="logo-text">Tastes <em>of</em> Africa</h2>
+        <p>Celebrating the dishes, spices and stories of a continent, one recipe at a time.</p>
+      </section>
+
+      <nav class="footer-links" aria-label="Footer">
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="recipes.html">All recipes</a></li>
+          <li><a href="regions/east-africa.html">East Africa</a></li>
+          <li><a href="regions/west-africa.html">West Africa</a></li>
+          <li><a href="regions/north-africa.html">North Africa</a></li>
+          <li><a href="contact.html">Get in touch</a></li>
+        </ul>
+      </nav>
+
+      <!-- Newsletter signup -->
+      <section class="newsletter" aria-labelledby="newsletter-title">
+        <h3 id="newsletter-title">Join our kitchen table</h3>
+        <p>One new recipe and a spice story every month. We promise not to spam.</p>
+        <form class="newsletter-form" id="newsletter-form">
+          <label for="newsletter-email" class="visually-hidden">Email address</label>
+          <input type="email" id="newsletter-email" name="newsletter-email" placeholder="you@example.com" required>
+          <button type="submit" class="btn btn-accent">Subscribe</button>
+        </form>
+        <p class="newsletter-msg" aria-live="polite"></p>
+      </section>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; <span id="year">2026</span> Tastes of Africa. Made with love and a lot of pilipili.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" type="button" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

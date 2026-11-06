@@ -30,8 +30,8 @@
   --shadow: 0 0.5rem 1.5rem rgba(59, 36, 20, 0.12);
   --shadow-lg: 0 1rem 2.5rem rgba(59, 36, 20, 0.2);
 
-  --font-heading: "Abril Fatface", Georgia, "Times New Roman", serif;
-  --font-body: "Nunito Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+--font-heading: "DM Serif Display", Georgia, "Times New Roman", serif;
+--font-body: "Mulish", system-ui, -apple-system, "Segoe UI", sans-serif;
 
   --space-xs: 0.5rem;
   --space-sm: 1rem;

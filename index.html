@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover African cuisine: featured recipes, culinary regions and food trends.">
+  <title>Home | Tastes of Africa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Nunito+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Tastes of Africa – home">
+        <span class="logo-text">Tastes <em>of</em> Africa</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="regions.html">Regions</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Toggle dark / light mode">
+        <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="M20.7 14.6A8.5 8.5 0 0 1 9.4 3.3 8.5 8.5 0 1 0 20.7 14.6z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v3M12 19.5v3M1.5 12h3M19.5 12h3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M4.6 19.4l2.1-2.1M17.3 6.7l2.1-2.1"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===================== HERO =====================
+         The hero background image is set in styles.css (.hero → images/hero.jpg).
+         IMAGE: replace images/hero.jpg with a large food photo (about 1920×1080). -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">A journey through Africa's kitchens</p>
+          <h1 id="hero-title">Welcome to <span>Tastes of Africa</span></h1>
+          <p class="lead">From steaming plates of <mark>matoke</mark> in Kampala to fragrant <mark>pilau</mark> on the Mombasa coast and nutty <mark>egusi</mark> in Lagos. Discover the recipes, spices and stories that make African food unforgettable.</p>
+          <div class="hero-actions">
+            <a href="recipes.html" class="btn btn-accent">Browse recipes</a>
+            <a href="regions.html" class="btn btn-ghost">Explore regions</a>
+          </div>
+        </div>
+        <!-- YouTube video  -->
+<div class="video-wrapper" data-video-id="50UG9I1t1rg">
+  <iframe src="https://www.youtube.com/embed/50UG9I1t1rg" title="Cooking tutorial" loading="lazy"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+        <p class="video-link"><a href="https://www.youtube.com/watch?v=50UG9I1t1rg" target="_blank" rel="noopener">Video not playing? Watch on YouTube <span aria-hidden="true">→</span></a></p>
+          <p class="video-caption">Watch: cooking pilau, a celebration dish of the Swahili coast.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="featured-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Signature plates</p>
+          <h2 id="featured-title">Featured Dishes</h2>
+          <p>Four dishes every food lover should try at least once.</p>
+        </header>
+        <div class="dish-grid">
+        <figure class="dish-card reveal">
+          <img src="images/matoke.jpg" alt="A plate of Matoke" loading="lazy" width="1200" height="800">
+          <figcaption>
+            <span class="tag tag-east-africa">Uganda</span>
+            <h3>Matoke</h3>
+            <p>Uganda's national dish: green cooking bananas simmered in a tomato and onion broth until soft and comforting.</p>
+            <a href="recipes/matoke.html" class="text-link">Get the recipe <span aria-hidden="true">→</span></a>
+          </figcaption>
+        </figure>
+
+        <figure class="dish-card reveal">
+          <img src="images/pilau.jpg" alt="A plate of Pilau" loading="lazy" width="1200" height="800">
+          <figcaption>
+            <span class="tag tag-east-africa">Kenya</span>
+            <h3>Pilau</h3>
+            <p>Fragrant one-pot rice from the Swahili coast, browned with onions and warm whole spices, the star of every Kenyan celebration.</p>
+            <a href="recipes/pilau.html" class="text-link">Get the recipe <span aria-hidden="true">→</span></a>
+          </figcaption>
+        </figure>
+
+        <figure class="dish-card reveal">
+          <img src="images/egusi.jpg" alt="A plate of Egusi Soup" loading="lazy" width="1200" height="800">
+          <figcaption>
+            <span class="tag tag-west-africa">Nigeria</span>
+            <h3>Egusi Soup</h3>
+            <p>A rich, nutty Nigerian soup thickened with ground melon seeds, palm oil and leafy greens.</p>
+            <a href="recipes/egusi.html" class="text-link">Get the recipe <span aria-hidden="true">→</span></a>
+          </figcaption>
+        </figure>
+
+        <figure class="dish-card reveal">
+          <img src="images/kuku-kienyeji.jpg" alt="A plate of Kuku Kienyeji" loading="lazy" width="1200" height="800">
+          <figcaption>
+            <span class="tag tag-east-africa">Kenya</span>
+            <h3>Kuku Kienyeji</h3>
+            <p>Slow-cooked village chicken in a simple tomato gravy, Kenya's most treasured Sunday and holiday meal. The food every mother refers to when they say that there's food at home.</p>
+            <a href="recipes/kuku-kienyeji.html" class="text-link">Get the recipe <span aria-hidden="true">→</span></a>
+          </figcaption>
+        </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- regions -->
+    <section class="section section-alt" aria-labelledby="regions-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Where it all comes from</p>
+          <h2 id="regions-title">Explore by Region</h2>
+        </header>
+        <div class="region-grid">
+        <a class="region-link reveal" href="regions/east-africa.html">
+          <img src="images/east-africa.jpg" alt="Food and landscape of East Africa" loading="lazy" width="1200" height="800"> 
+          <span class="region-link-text">
+            <strong>East Africa</strong>
+            <span>Coconut-rich Swahili coast cooking, Lake Victoria fish, matoke and ugali.</span>
+          </span>
+        </a>
+        <a class="region-link reveal" href="regions/west-africa.html">
+          <img src="images/west-africa.jpg" alt="Food and landscape of West Africa" loading="lazy" width="1200" height="800">
+          <span class="region-link-text">
+            <strong>West Africa</strong>
+            <span>Palm oil, pepper and "swallows", the home of egusi, jollof and suya.</span>
+          </span>
+        </a>
+        <a class="region-link reveal" href="regions/north-africa.html">
+          <img src="images/north-africa.jpg" alt="Food and landscape of North Africa" loading="lazy" width="1200" height="800">
+          <span class="region-link-text">
+            <strong>North Africa</strong>
+            <span>Couscous, slow-braised tagines and the warm spice of ras el hanout.</span>
+          </span>
+        </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- food trends -->
+    <section class="section" aria-labelledby="trends-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">What's cooking</p>
+          <h2 id="trends-title">Latest Food Trends</h2>
+        </header>
+        <div class="trends-grid">
+          <article class="trend reveal">
+            <p class="trend-meta"><time datetime="2026-10-15">15 Oct 2026</time> · Health</p>
+            <h3>Traditional greens are back on the menu</h3>
+            <p>Young Nairobi chefs are rediscovering indigenous vegetables such as <mark>managu</mark>, <mark>terere</mark> and <mark>saga</mark>. Once dismissed as "village food", they are now prized for being nutritious, climate-hardy and full of flavour.</p>
+          </article>
+          <article class="trend reveal">
+            <p class="trend-meta"><time datetime="2026-09-28">28 Sep 2026</time> · Grains</p>
+            <h3>Ancient grains go global</h3>
+            <p>West Africa's <mark>fonio</mark> and Ethiopia's <mark>teff</mark> are showing up in bakeries and cafés around the world. Both are gluten-free, quick to cook and have been grown on the continent for thousands of years.</p>
+          </article>
+          <article class="trend reveal">
+            <p class="trend-meta"><time datetime="2026-09-10">10 Sep 2026</time> · Culture</p>
+            <h3>Swahili coast flavours inspire fusion kitchens</h3>
+            <p>The <mark>Indian Ocean spice trade</mark> shaped dishes like pilau and biryani on the coast. Today, restaurants are mixing <mark>pilau masala</mark> and coconut into burgers, tacos and pastries for a new generation of diners.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <section class="footer-brand" aria-labelledby="footer-title">
+        <h2 id="footer-title" class="logo-text">Tastes <em>of</em> Africa</h2>
+        <p>Celebrating the dishes, spices and stories of a continent, one recipe at a time.</p>
+      </section>
+
+      <nav class="footer-links" aria-label="Footer">
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="recipes.html">All recipes</a></li>
+          <li><a href="regions/east-africa.html">East Africa</a></li>
+          <li><a href="regions/west-africa.html">West Africa</a></li>
+          <li><a href="regions/north-africa.html">North Africa</a></li>
+          <li><a href="contact.html">Get in touch</a></li>
+        </ul>
+      </nav>
+
+      <section class="newsletter" aria-labelledby="newsletter-title">
+        <h3 id="newsletter-title">Join our kitchen table</h3>
+        <p>One new recipe and a spice story every month. We promise not to spam.</p>
+        <form class="newsletter-form" id="newsletter-form">
+          <label for="newsletter-email" class="visually-hidden">Email address</label>
+          <input type="email" id="newsletter-email" name="newsletter-email" placeholder="you@example.com" required>
+          <button type="submit" class="btn btn-accent">Subscribe</button>
+        </form>
+        <p class="newsletter-msg" aria-live="polite"></p>
+      </section>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; <span id="year">2026</span> Tastes of Africa. Made with love and a lot of pilipili.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" type="button" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
